@@ -3808,11 +3808,11 @@ clip-path: inset(0 0 0 0);}
   animation: bt ease-out forwards;
 }
 @keyframes f-down {
-  from { transform: translateY(50px); opacity: 0; }
+  from { transform: translateY(20%); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 .f-down {
-  animation: f-down 1s ease-out forwards;
+  animation: f-down 1.5s cubic-bezier(0, 0, 0.02, 1.01) forwards;
 }
 @keyframes f-apr {
   from {
@@ -3877,11 +3877,11 @@ clip-path: inset(0 0 0 0);}
   animation: scalee .8s forwards;
 }
 @keyframes myscale {
-  from { transform: scale(0); }
-  to { transform: scale(1); }
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 .myscale {
-  animation: myscale forwards;
+  animation: myscale 1s forwards;
 }
 @keyframes header {
   from {

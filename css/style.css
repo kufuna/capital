@@ -12,7 +12,7 @@
 }
 body {
 	margin: 0;
-	opacity: 1;
+	opacity: 0;
 	padding-top: 190px;
 	overflow-x: hidden;
 	position: relative;
@@ -42,6 +42,9 @@ a {
 
 .red {
 	color: #eb1a41;
+}
+.black {
+	color: #172029;
 }
 .bold {
 	font-family: 'bold';
@@ -1619,5 +1622,300 @@ header.active div.container div.right-content div.lang-box:hover div.box span {
 	header div.container div#logo {
 		left: 50%;
 		margin-left: -105px;
+	}
+}
+
+
+
+div#partners {
+	max-width: 1374px;
+	margin: 30px auto;
+	position: relative;
+}
+div#partners h1 {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #d9dadc;
+}
+div#partners div.row div.box {
+	width: 33.3%;
+	/*padding-left: 32px;*/
+	margin-top: 60px;
+	float: left;
+	padding-left: 32px;
+}
+div#partners div.row div.content {
+	width: 100%;
+	position: relative;
+	padding-right: 32px;
+}
+div#partners div.row div.box:nth-child(3n) div.content {
+	padding-right: 0px;
+}
+div#partners div.row div.content a:hover div.text-content div.stick div.inner-stick {
+	width: 100%;
+}
+div#partners div.row div.content a:hover div.text-content h2 {
+	color: #eb1a41;
+}
+div#partners div.row div.content img {
+	width: 100%;
+	height: auto;
+	max-height: 195px;
+}
+div#partners div.row div.content div.text-content {
+	padding-top: 95px;
+	width: 100%;
+	position: relative;
+}
+div#partners div.row div.content div.text-content h2 {
+	font-size: 20px;
+	position: absolute;
+	bottom: 30px;
+	padding: 10px 0;
+	transition: .6s;
+}
+div#partners div.row div.content div.text-content h3 {
+	font-size: 14px;
+	font-weight: 100;
+	padding: 7px 0; 
+}
+div#partners div.row div.content div.text-content div.stick {
+	width: 100%;
+	height: 2px;
+	background: #d9dadc;
+}
+div#partners div.row div.content div.text-content div.stick div.inner-stick {
+	width: 0%;
+	height: 2px;
+	margin: auto;
+	background: #eb1a41;
+	transition: .6s cubic-bezier(0, 0, 0, 0.99);
+}
+div#partners div.row div.content div.text-content div.rect {
+	width: 24px;
+	height: 24px;
+	border: 5px solid rgb(217,218,220);
+	border-top: none;
+	border-right: none;
+	position: absolute;
+	transform-origin: left bottom;
+    top: 74px;
+    left: -30px;
+}
+@media (max-width: 1500px) {
+	div#partners {
+		padding: 0 54px;
+	}
+	div#partners div.row div.content img {
+		max-height: 170px;
+	}
+}
+@media (max-width: 1365px) {
+	div#partners div.row div.box {
+		width: 50%;
+	}
+	div#partners div.row div.box:nth-child(3n) div.content {
+		padding-right: 32px;
+	}
+	div#partners div.row div.content div.text-content {
+		padding-top: 70px;
+	}
+	div#partners div.row div.content div.text-content div.rect {
+		top: 49px;
+	}
+	div#partners div.row div.content img {
+		max-height: 195px;
+	}
+	div#partners div.row div.box:nth-child(2n) div.content {
+		padding-right: 0px;
+	}
+}
+@media(max-width: 1023px) {
+	div#partners {
+		padding: 0 27px;
+	}
+	div#partners div.row div.box {
+		margin-top: 30px;
+	}
+	div#partners div.row div.content img {
+		width: unset;
+		max-height: 145px;
+	}
+}
+@media (max-width: 767px) {
+	div#partners {
+		padding: 0 14px;
+	}
+	div#partners div.row div.box {
+		width: 100%;
+	}
+	div#partners h1 {
+		font-size: 33px;
+	}
+	div#partners div.row div.content {
+		padding-right: 0;
+	}
+	div#partners div.row div.box:nth-child(3n) div.content {
+		padding-right: 0px;
+	}
+	div#partners div.row div.content img {
+		width: 100%;
+		max-height: unset;
+	}
+}
+
+
+div#contact {
+	max-width: 1374px;
+	margin: auto;
+	margin-top: 30px;
+}
+div#contact h1 {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #d9dadc;
+}
+div#contact div.row {
+	padding-top: 46px;
+}
+div#contact div.row div.right {
+	width: 74%;
+	padding-top: 30%;
+	float: right;
+	position: relative;
+}
+div#contact div.row div.right:hover a {
+	background: rgba(49, 68, 85, 0.85);
+}
+div#contact div.row div.right:hover a div.button {
+	background: #172029;
+}
+div#contact div.row div.right a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .5s;
+}
+div#contact div.row div.right a div.button {
+	height: 80px;
+	position: absolute;
+	bottom: -40px;
+	right: 88px;
+	background: #eb1a41;
+	transition: .5s;
+}
+div#contact div.row div.right a div.button svg {
+	position: absolute;
+	width: 27px;	
+	height: auto;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+div#contact div.row div.right a div.button span.text {
+	color: white;
+	margin-left: 83px;
+	margin-right: 35px;
+	line-height: 80px;
+}
+div#contact div.row div.left {
+	width: 26%;
+	float: left;
+	position: relative;
+	padding-right: 20px;
+}
+div#contact div.row div.left ul {
+	list-style: none;
+}
+div#contact div.row div.left ul li {
+	margin-bottom: 27px;
+}
+div#contact div.row div.left ul li h3 {
+	font-size: 16px;
+}
+div#contact div.row div.left ul li span.regular {
+	font-weight: 100;
+	font-size: 16px;
+}
+div#contact div.row div.left ul li span.regular a {
+	display: block;
+	margin: 2px 0;
+}
+div#contact div.row div.left ul li h4 {
+	font-size: 14px;
+}
+div#contact div.row div.left ul li a.social {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+}
+div#contact div.row div.left ul li a.social:last-child {
+	margin-left: 6px;
+}
+@media (max-width: 1400px) {
+	div#contact {
+		padding: 0 50px;
+	}
+}
+@media (max-width: 1365px) {
+	div#contact div.row div.right {
+		padding-top: 36%;
+	}
+}
+@media (max-width: 1023px) {
+	div#contact {
+		padding: 0 27px;
+	}
+	div#contact div.row div.right {
+		width: 100%;
+		float: left;
+	}
+	div#contact div.row div.right a div.button {
+		left: 0;
+		bottom: 0;
+		right: unset;
+	}
+	div#contact div.row div.right {
+		padding-top: 50%;
+	}
+	div#contact div.row div.left {
+		width: 100%;
+		padding: 30px 0;
+	}
+	div#contact div.row div.left ul:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+/*	div#contact div.row div.left ul li {
+		width: 33.3%;
+		float: left;
+	}*/
+}
+@media (max-width: 767px) {
+	div#contact h1 {
+		font-size: 33px;
+	}
+	div#contact div.row {
+		padding-top: 30px;
+	}
+	div#contact {
+		padding: 0 14px;
+	}
+	div#contact div.row div.right {
+		padding-top: 70%;
+	}
+	div#contact div.row div.right a div.button {
+		height: 60px;
+	}
+	div#contact div.row div.right a div.button span.text {
+		line-height: 60px;
+		margin-left: 50px;
+		white-space: nowrap;
+	}
+	div#contact div.row div.right a div.button svg {
+		left: 14px;
 	}
 }
